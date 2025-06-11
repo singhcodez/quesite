@@ -1,0 +1,167 @@
+
+:root{
+    --primary:#0056b3;
+    --secondary:#007bff;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Remove default body margin for full-width elements like nav */
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 20px;
+    padding: 10px 0;
+}
+
+h2{
+    font-size:1.9em;
+    
+    
+}
+
+/* --- Subject List Container Styling --- */
+.subject-list-container {
+    max-width: 700px; /* Increased max-width for better look */
+    margin: 20px auto; /* Center the container */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+}
+
+.subject-list-container ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.subject-list-container li {
+    margin-bottom: 12px; /* Space between list items */
+}
+
+.subject-list-container li a {
+    display: block; /* Make the entire list item clickable */
+    padding: 12px 15px;
+    background-color: var(--secondary); /* Primary button color */
+    color: white;
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 50px;
+    text-align: center;
+    font-size: 1.1em; /* Slightly larger font */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effects */
+}
+
+.subject-list-container li a:hover {
+    background-color: var(--primary); /* Darker on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    font-weight: bold;
+}
+
+
+/* --- Go Back Button Styling --- */
+.footer-nav {
+    text-align: center; /* Center the button */
+    margin-top: 50px; /* More space above the button */
+    padding: 20px;
+    border-top: 1px solid #eee; /* A subtle separator line */
+    background-color: #fff; /* Match background of content sections */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow from top */
+}
+
+.go-back-btn {
+    padding: 12px 25px; /* Larger padding for a more prominent button */
+    background-color: #6c757d; /* A neutral, professional color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em; /* Consistent font size */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.go-back-btn:hover {
+    background-color: #414950; /* Darker on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/*--- prev-year-que  styling*/
+
+/* --- Top Navigation Buttons Styling --- */
+.top-nav-buttons {
+    display: flex;
+    justify-content: space-between; /* Pushes buttons to ends */
+    padding: 15px 20px;
+    background-color: var(--secondary); /* A light grey background */
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px; /* Space below the top nav */
+}
+
+.nav-back-btn {
+    padding: 10px 20px;
+     background: transparent;
+    border: 2px solid white;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease,transform 0.3s ease;
+}
+
+.nav-home-btn {
+    display: none;
+    background-color: #6c757d; /* Neutral grey for Back */
+}
+
+.nav-home-btn:hover {
+    background-color: #0056b3;
+}
+
+.nav-back-btn:hover {
+   font-weight: bold;
+   transform: translateX(-7px);
+}
+
+/* list  Container Styling --- */
+.pdf-list-container {
+    max-width: 800px; /* Wider container for readability */
+    margin: 20px auto;
+    padding: 30px; /* More padding */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+}
+
+.pdf-list-container h2 {
+    margin-bottom: 15px; /* More space below heading */
+    color: var(--secondary); /* Darker heading for content section */
+}
+
+.pdf-list-container ul {
+    list-style: disc; /* Use traditional bullet points */
+    padding-left: 25px; /* Indent bullets */
+    margin: 0;
+}
+
+.pdf-list-container li {
+    margin-bottom: 15px; /* Space between list items */
+    font-size: 1.1em; /* Slightly larger text */
+}
+
+.pdf-list-container li a {
+    color: #007bff; /* Blue for links */
+    text-decoration: underline; /* Standard underline for links */
+    transition: color 0.2s ease;
+}
+
+.pdf-list-container li a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: none; /* Remove underline on hover for a subtle effect */
+}
