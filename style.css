@@ -24,7 +24,7 @@ h2{
 }
 
 /* Styling for both actual buttons and anchor tags with class="button" */
-button, .button { /* Apply styles to both <button> and <a> with class="button" */
+button,.button { /* Apply styles to both <button> and <a> with class="button" */
     padding: 10px 15px;
     margin: 5px;
     border: none;
@@ -40,6 +40,10 @@ button, .button { /* Apply styles to both <button> and <a> with class="button" *
     display: flex; /* Make anchor tags behave like block/flex for width/height */
     align-items: center; /* Center text vertically */
     justify-content: center; /* Center text horizontally */
+}
+a{
+    text-decoration: none;
+    color:white;
 }
 
 button:hover, .button:hover {
