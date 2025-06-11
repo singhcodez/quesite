@@ -140,8 +140,14 @@ h2{
 }
 
 .pdf-list-container h2 {
+    margin-top:0px;
+    width:100%;
     margin-bottom: 15px; /* More space below heading */
-    color: var(--secondary); /* Darker heading for content section */
+    font-size: 1.3em;
+    text-decoration: underline;
+    border-radius: 25px;
+    color: var(--primary);
+    font-weight:bold;/* Darker heading for content section */
 }
 
 .pdf-list-container ul {
@@ -152,16 +158,19 @@ h2{
 
 .pdf-list-container li {
     margin-bottom: 15px; /* Space between list items */
+    list-style:square;
     font-size: 1.1em; /* Slightly larger text */
 }
 
 .pdf-list-container li a {
-    color: #007bff; /* Blue for links */
-    text-decoration: underline; /* Standard underline for links */
+    color: var(--secondary); /* Blue for links */
+    
+    text-decoration: none; /* Standard underline for links */
     transition: color 0.2s ease;
 }
 
 .pdf-list-container li a:hover {
-    color: #0056b3; /* Darker blue on hover */
-    text-decoration: none; /* Remove underline on hover for a subtle effect */
+    color: var(--primary); /* Darker blue on hover */
+    text-decoration: underline;
+    font-weight:bold;/* Remove underline on hover for a subtle effect */
 }
