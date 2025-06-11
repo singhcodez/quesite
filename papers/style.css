@@ -64,40 +64,11 @@ h2{
     font-weight: bold;
 }
 
-
-/* --- Go Back Button Styling --- */
-.footer-nav {
-    text-align: center; /* Center the button */
-    margin-top: 50px; /* More space above the button */
-    padding: 20px;
-    border-top: 1px solid #eee; /* A subtle separator line */
-    background-color: #fff; /* Match background of content sections */
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow from top */
-}
-
-.go-back-btn {
-    padding: 12px 25px; /* Larger padding for a more prominent button */
-    background-color: #6c757d; /* A neutral, professional color */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1em; /* Consistent font size */
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.go-back-btn:hover {
-    background-color: #414950; /* Darker on hover */
-    transform: translateY(-2px); /* Slight lift effect */
-}
-
-/*--- prev-year-que  styling*/
-
 /* --- Top Navigation Buttons Styling --- */
 .top-nav-buttons {
     display: flex;
     justify-content: space-between; /* Pushes buttons to ends */
-    padding: 15px 20px;
+    padding: 10px 15px;
     background-color: var(--secondary); /* A light grey background */
     border-bottom: 1px solid #ccc;
     margin-bottom: 20px; /* Space below the top nav */
@@ -115,19 +86,14 @@ h2{
     transition: background-color 0.3s ease,transform 0.3s ease;
 }
 
-.nav-home-btn {
-    display: none;
-    background-color: #6c757d; /* Neutral grey for Back */
-}
-
-.nav-home-btn:hover {
-    background-color: #0056b3;
-}
-
 .nav-back-btn:hover {
    font-weight: bold;
    transform: translateX(-7px);
 }
+
+
+/*--- prev-year-que  styling*/
+
 
 /* list  Container Styling --- */
 .pdf-list-container {
