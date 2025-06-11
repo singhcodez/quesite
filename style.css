@@ -1,0 +1,126 @@
+/* Basic styling for body and headings */
+:root{
+    --primary:#0056b3;
+    --secondary:#007bff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    scroll-behavior:smooth; /* Enables smooth scrolling for anchor links */
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary);
+    margin: 30px 0px;
+}
+h2{
+    font-size: 1.7em;
+    color: var(--secondary);
+    text-decoration: underline;
+}
+
+/* Styling for both actual buttons and anchor tags with class="button" */
+button, .button { /* Apply styles to both <button> and <a> with class="button" */
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--secondary);
+    color: white;
+    cursor: pointer;
+    font-size: 1.3em;
+    flex-grow: 1;
+    min-width: 120px;
+    box-sizing: border-box;
+    text-decoration: none; /* Remove underline for anchor tags */
+    display: flex; /* Make anchor tags behave like block/flex for width/height */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+}
+
+button:hover, .button:hover {
+    background-color: var(--primary);
+    font-weight: bold;
+}
+
+/* Course Section Styling */
+.course-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:30px 10px;
+    padding-top: 0px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Semester Selection Buttons Styling */
+.semester-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px; /* Add some space before the content sections */
+}
+
+ h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+
+/* Semester Content Sections Styling */
+.semester-section {
+    max-width: 800px;
+    margin: 0 auto 40px auto; /* Center the whole content area */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Layout (Default - up to 767px) */
+/* Course buttons: 2 per row */
+.course-section .button { /* Target anchor tags specifically */
+    flex-basis: calc(50% - 20px);
+    max-width: calc(50% - 20px);
+}
+
+/* Semester selection buttons: 1 per row */
+.semester-section button { /* Target actual buttons specifically */
+    flex-basis: calc(100% - 20px);
+    max-width: calc(100% - 20px);
+}
+
+/* PC Layout (from 768px and up) */
+@media (min-width: 768px) {
+    /* Course buttons: 4 per row */
+    .course-section .button {
+        flex-basis: calc(25% - 20px);
+        max-width: calc(25% - 20px);
+    }
+
+    /* Semester selection buttons: 2 per row */
+    .semester-section button {
+        flex-basis: calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
