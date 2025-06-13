@@ -7,20 +7,20 @@ const subject=url.get("subject")
 console.log(course,sem,subject)
 
 for (let key in courseData) {
-  
+  // check course
   if(course==key){
-    
+    // visit semesters 
     for (let semester in courseData[key]. semesters) {
-      // Tab to edit
+      // check semester
     if (sem==semester) {
     console.log(sem)
     
-    
+    // visit the subjects 
     for (let index in courseData[key]. semesters[sem].subjects) {
-      // Tab to edit
-  
+      
+  // check subject
         if(courseData[key]. semesters[sem].subjects[index].id==subject){
-          
+          // display Heading course semester subject
               document.getElementById("sub-sem").textContent=`${courseData[key].name}  Semester-${sem} ${courseData[key]. semesters[sem].subjects[index].name}`;
               // display years or links to download 
               for (let year in courseData[key]. semesters[sem].subjects[index].papers) {
