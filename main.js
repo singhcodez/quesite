@@ -24,8 +24,9 @@ for (let key in courseData) {
               document.getElementById("sub-sem").textContent=`${courseData[key].name}  Semester-${sem} ${courseData[key]. semesters[sem].subjects[index].name}`;
               // display years or links to download 
               for (let year in courseData[key]. semesters[sem].subjects[index].papers) {
-                
-                  document.getElementById("prev-papers").innerHTML+=`<li><a href="" download>${courseData[key]. semesters[sem].subjects[index].papers[year]} </a></li>`
+                let link=`./${course}/sem${sem}/${subject}/${courseData[key]. semesters[sem].subjects[index].papers[year]}.pdf`;
+                console.log(link)
+                  document.getElementById("prev-papers").innerHTML+=`<li><a href=${link} download>${courseData[key]. semesters[sem].subjects[index].papers[year]} </a></li>`
                 
               }
               
